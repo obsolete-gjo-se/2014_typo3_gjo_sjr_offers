@@ -1,0 +1,10 @@
+plugin.tx_gjosjroffers {
+	view {
+		templateRootPath = EXT:gjo_sjr_offers/Resources/Private/Templates/
+		partialRootPath = EXT:gjo_sjr_offers/Resources/Private/Partials/
+		layoutRootPath = EXT:gjo_sjr_offers/Resources/Private/Layouts/
+	}
+	persistence {
+		storagePid =
+	}
+}

@@ -1,0 +1,10 @@
+plugin.tx_gjosjroffers {
+
+	view {
+		templateRootPath = {$plugin.tx_gjosjroffers.view.templateRootPath}
+		partialRootPath = {$plugin.tx_gjosjroffers.view.partialRootPath}
+		layoutRootPath = {$plugin.tx_gjosjroffers.view.layoutRootPath}
+	}
+}
+
+
