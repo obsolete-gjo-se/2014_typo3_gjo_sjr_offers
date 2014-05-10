@@ -33,4 +33,6 @@ namespace Gjo\GjoSjrOffers\Domain\Model;
  */
 class AgeRange extends Abstracts\AbstractRangeConstraint implements Interfaces\NumericRangeInterface{
 
+
+    // jetzt bekommt der AgeRange doch noch seine Aufgaben zu tun....
 } 
