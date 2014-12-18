@@ -23,6 +23,7 @@
  ***************************************************************/
 
 namespace Gjo\GjoSjrOffers\Domain\Model;
+
 use TYPO3\CMS\Extbase\DomainObject\AbstractEntity;
 
 /**
@@ -32,7 +33,8 @@ use TYPO3\CMS\Extbase\DomainObject\AbstractEntity;
  * @version 1.0
  * @updated 30-Apr-2014 08:24
  */
-class AttendanceFee extends AbstractEntity {
+class AttendanceFee extends AbstractEntity
+{
 
     /**
      * @var string The amount.
@@ -49,7 +51,8 @@ class AttendanceFee extends AbstractEntity {
      * @param string $amount The amount
      * @param string $comment The comment
      */
-    public function __construct($amount, $comment = '') {
+    public function __construct($amount, $comment = '')
+    {
         $this->setAmount($amount);
         $this->setComment($comment);
     }
@@ -94,14 +97,21 @@ class AttendanceFee extends AbstractEntity {
      */
 //    protected function normalizeAmount($input) {
 //        if (!is_string($input)) return $input;
+
 //        $input = str_replace('.', '', $input);
 //        $input = str_replace(',', '.', $input);
 //        return number_format($input, 2);
 //    }
 
-    public function __toString() {
-        return $this->getAmount() . ' (' . $this->getComment() . ')';
+
+
+    /**
+     * @return string
+     */
+    public function __toString()
+    {
+            return $this->getAmount() . ' (' . $this->getComment() . ')';
     }
 
 
-} 
+}
